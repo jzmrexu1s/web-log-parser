@@ -372,7 +372,7 @@ def main():
     log_format = parse_log_format()
 
     result_files = [result_file.replace('.html', '') for result_file in get_dir_files('../result/report/')]
-    target_files = sorted([data_file for data_file in get_dir_files('../data') if data_file not in result_files])
+    target_files = sorted([data_file for data_file in get_dir_files('../data')])
 
     for target_file in target_files:
         try:
